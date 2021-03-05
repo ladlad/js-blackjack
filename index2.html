@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <title>Free Blackjack Online Game By Idan Levy</title>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="blackjackstyle.css">
+    </head>
+    
+    <body>
+        <div>Balance:<span id="money" style="color:rgb(210, 245, 14); font-weight:bold">100$</span></div>
+        <div id="container"><span id="message" style="color:#600; font-weight:bold">Welcome to BlackJack. Enter what you want to bet and press new game.</span></div>
+        <div id="wrapper">  
+            
+            <div id="dealerRow">
+                <div id="dealerCards">
+                    <img src="Images/cardback.png" id="dealerCard1">
+                    <img src="Images/cardback.png" id="dealerCard2">
+                    <img src="Images/emptyCard.png" id="dealerCard3">
+                    <img src="Images/emptyCard.png" id="dealerCard4">
+                    <img src="Images/emptyCard.png" id="dealerCard5">
+                </div>
+                <div id="dealerSum"></div>
+                <div>Dealer Cards</div>
+            </div>   
+           
+            <div id="betdiv">
+                <button type="button" onclick="hit()">Hit</button>
+                <div>Your bet: <input type=text size=4 id="bet">   
+                        <br>
+                </div>   
+                <button type="button" onclick="stand()">Stand</button>
+                <button type="button" onclick="newGame()">New Game</button>
+            </div>
+
+            <div id="PlayerRow">
+                <div id="PlayerCards">
+                    <img src="Images/cardback.png" id="playerCard1">
+                    <img src="Images/cardback.png" id="playerCard2">
+                    <img src="Images/emptyCard.png" id="playerCard3">
+                    <img src="Images/emptyCard.png" id="playerCard4">
+                    <img src="Images/emptyCard.png" id="playerCard5">
+                </div>
+                <div id="PlayerSum"></div>
+                <div>Player Cards</div>
+            </div>
+        </div>
+        <script src="card.js"></script>
+        <script src="main.js"></script>  
+    </body>
+</html>

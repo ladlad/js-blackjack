@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(250, 253, 250);
+    text-align: center;
+}
+img {
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+}
+#wrapper { 
+    background-color: rgb(41, 112, 41);
+    position: relative;
+    border: thick solid rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+}

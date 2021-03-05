@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title>Blackjack</title>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="blackjackstyle.css">
+        <script src="card.js"></script>
+        <script src="main.js"></script>  
+    </head>
+    
+    <body>
+        <div id="wrapper">  
+            
+            <div id="dealerRow">
+                <p>Dealer cards</p>
+                <img src="Images/cardback.png" id="dealerCard1">
+                <img src="Images/cardback.png" id="dealerCard2">
+                <img src="Images/emptyCard.png" id="dealerCard3">
+                <img src="Images/emptyCard.png" id="dealerCard4">
+                <img src="Images/emptyCard.png" id="dealerCard5">
+            </div>   
+            
+            <div id="PlayerRow">
+                <p>Player cards</p>
+                <img src="Images/cardback.png" id="playerCard1">
+                <img src="Images/cardback.png" id="playerCard2">
+                <img src="Images/emptyCard.png" id="playerCard3">
+                <img src="Images/emptyCard.png" id="playerCard4">
+                <img src="Images/emptyCard.png" id="playerCard5">
+            </div>
+
+            <br>
+
+             
+            <div id="betdiv" >
+                <p>You have: </p>  <span id="money" style="color:rgb(210, 245, 14); font-weight:bold">100$</span>
+
+                <br>
+               
+                <p>Your bet:</p> <input type=text size=4 id="bet">   
+
+                    <br>
+            </div>   
+
+
+        </div>
+
+            <br>
+
+            <div>
+                <button type="button" onclick="hit()">Hit</button>
+                <button type="button" onclick="stand()">Stand</button>
+                <button type="button" onclick="newGame()">new Game</button>
+            </div>
+
+            <br>
+            
+            <div id="container">
+                <div id="exampleModal" class="reveal-modal">
+                    <span id="message" style="color:#600; font-weight:bold">Welcome to BlackJack. Enter what you want to bet and press new game.</span>
+                <a href="#">Close Modal</a>
+                </div>
+            </div>
+    </body>
+</html>
